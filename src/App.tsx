@@ -43,7 +43,7 @@ function a11yProps(index: number) {
     };
 }
 
-export default function FullWidthTabs() {
+export default function App() {
     const theme = useTheme();
     const [value, setValue] = React.useState(0);
 
