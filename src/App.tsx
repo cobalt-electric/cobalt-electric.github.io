@@ -7,7 +7,12 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import {Container} from "@mui/material";
-import logo from './static/logo.png'
+import Form from "./Form";
+
+import logo from './static/logo2.png'
+import ladder from './static/ladder.jpg'
+import panel from './static/panel.jpg'
+import outlet from './static/outlet.jpg'
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -57,8 +62,8 @@ export default function App() {
 
     return (
         <Container>
-            <img src={logo} alt={''} width={'100%'} />
             <Box sx={{ bgcolor: 'background.paper' }}>
+                <img src={logo} alt={''} width={'75%'} style={{display: 'block',marginLeft: 'auto',marginRight: 'auto'}}/>
                 <AppBar position="static">
                     <Tabs
                         value={value}
@@ -69,14 +74,13 @@ export default function App() {
                         TabIndicatorProps={{style: {background:'#839cd2'}}}
                         sx={{
                             "color": "#053ca3",
-                            "background-color": "white"
+                            "backgroundColor": "white"
                         }}
                     >
                         <Tab label="Home" {...a11yProps(0)} />
                         <Tab label="About" {...a11yProps(1)} />
                         <Tab label="Services" {...a11yProps(2)} />
                         <Tab label="Contact Us" {...a11yProps(3)} />
-                        <Tab label="STYLES" {...a11yProps(4)} />
                     </Tabs>
                 </AppBar>
                 <SwipeableViews
@@ -85,57 +89,70 @@ export default function App() {
                     onChangeIndex={handleChangeIndex}
                 >
                     <TabPanel value={value} index={0} dir={theme.direction}>
-                        <h1 style={{"color": "#053ca3"}}>Welcome to Cobalt Electric, LLC</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam vulputate ut pharetra sit amet aliquam id. Turpis in eu mi bibendum neque egestas congue quisque egestas. Egestas dui id ornare arcu. Neque ornare aenean euismod elementum nisi quis eleifend. Purus semper eget duis at tellus at urna condimentum. Sem viverra aliquet eget sit amet tellus cras adipiscing enim. Cras sed felis eget velit aliquet sagittis. Amet nulla facilisi morbi tempus iaculis urna id volutpat lacus. Diam quam nulla porttitor massa id. Amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus et.
-                            <br /><br />
-                            Id leo in vitae turpis. Dolor sit amet consectetur adipiscing elit duis tristique sollicitudin nibh. Quisque non tellus orci ac auctor augue mauris. Pharetra massa massa ultricies mi quis hendrerit dolor magna. Neque sodales ut etiam sit. Fermentum iaculis eu non diam phasellus vestibulum lorem sed. Sit amet consectetur adipiscing elit ut aliquam. Phasellus faucibus scelerisque eleifend donec pretium vulputate. Pulvinar sapien et ligula ullamcorper malesuada proin libero. Quis hendrerit dolor magna eget est lorem. Tincidunt eget nullam non nisi est sit.
-                        </p>
+                        <div>
+                            <h1 style={{"color": "#053ca3"}}>Welcome to Cobalt Electric, LLC!</h1>
+                            <p>
+                                We provide expert electrical services to Central and Southeastern Ohio. Our company works in both residential and commercial settings and is qualified to handle all of your electrical needs. Whether you need a light switch replaced or a new electrical panel, we’re the ones to call!<br /><br />
+                                Please contact us today for any of your electrical needs, we provide free estimates and would be happy to answer any questions you may have. Thank you!
+                            </p>
+                            <h1>PICTURE OPTIONS: ONE</h1>
+                            <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', flexWrap: 'wrap'}}>
+                                <img src={ladder} alt={''}/>
+                                <img src={panel} alt={''} />
+                                <img src={outlet} alt={''} />
+                            </div>
+                            <h1>PICTURE OPTIONS: TWO</h1>
+                            <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', flexWrap: 'wrap'}}>
+                                <img src={ladder} alt={''}/>
+                                <img src={panel} alt={''} />
+                                <img src={outlet} alt={''} />
+                            </div>
+                            <h1>PICTURE OPTIONS: THREE</h1>
+                            <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', flexWrap: 'wrap'}}>
+                                <img src={ladder} alt={''}/>
+                                <img src={panel} alt={''} />
+                                <img src={outlet} alt={''} />
+                            </div>
+                        </div>
                     </TabPanel>
                     <TabPanel value={value} index={1} dir={theme.direction}>
-                        <h1 style={{"color": "#053ca3"}}>About Us</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam vulputate ut pharetra sit amet aliquam id. Turpis in eu mi bibendum neque egestas congue quisque egestas. Egestas dui id ornare arcu. Neque ornare aenean euismod elementum nisi quis eleifend. Purus semper eget duis at tellus at urna condimentum. Sem viverra aliquet eget sit amet tellus cras adipiscing enim. Cras sed felis eget velit aliquet sagittis. Amet nulla facilisi morbi tempus iaculis urna id volutpat lacus. Diam quam nulla porttitor massa id. Amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus et.
-                            <br /><br />
-                            Id leo in vitae turpis. Dolor sit amet consectetur adipiscing elit duis tristique sollicitudin nibh. Quisque non tellus orci ac auctor augue mauris. Pharetra massa massa ultricies mi quis hendrerit dolor magna. Neque sodales ut etiam sit. Fermentum iaculis eu non diam phasellus vestibulum lorem sed. Sit amet consectetur adipiscing elit ut aliquam. Phasellus faucibus scelerisque eleifend donec pretium vulputate. Pulvinar sapien et ligula ullamcorper malesuada proin libero. Quis hendrerit dolor magna eget est lorem. Tincidunt eget nullam non nisi est sit.
-                        </p>
+                        <div>
+                            <h1 style={{"color": "#053ca3"}}>About</h1>
+                            <p>
+                                Cobalt Electric, LLC was founded by Jeff Karmosay. After working as an electrician for several years, Jeff decided to start his own company and began Cobalt Electric, LLC. Located in Hocking County, our company strives to provide quality service to rural areas as well as urban locations.<br /><br/>
+                                At Cobalt Electric, LLC we strive to provide quality work, fair prices, and are honest with our customers. We are a licensed company, which means we follow electrical code requirements when completing all tasks.
+                            </p>
+                        </div>
                     </TabPanel>
                     <TabPanel value={value} index={2} dir={theme.direction}>
-                        <h1 style={{"color": "#053ca3"}}>Services We Offer</h1>
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                            <li>Aliquam tincidunt mauris eu risus.</li>
-                            <li>Vestibulum auctor dapibus neque.</li>
-                            <li>Nunc dignissim risus id metus.</li>
-                            <li>Cras ornare tristique elit.</li>
-                            <li>Vivamus vestibulum ntulla nec ante.</li>
-                            <li>Praesent placerat risus quis eros.</li>
-                            <li>Fusce pellentesque suscipit nibh.</li>
-                            <li>Integer vitae libero ac risus egestas placerat.</li>
-                            <li>Vestibulum commodo felis quis tortor.</li>
-                            <li>Ut aliquam sollicitudin leo.</li>
-                            <li>Cras iaculis ultricies nulla.</li>
-                            <li>Donec quis dui at dolor tempor interdum.</li>
-                        </ul>
+                        <div>
+                            <h1 style={{"color": "#053ca3"}}>Services</h1>
+                            <p>We provide a variety of services, some of which include:</p>
+                            <ul>
+                                <li>Troubleshooting</li>
+                                <li>Outlet and switch replacement</li>
+                                <li>Electrical panel replacements/upgrades</li>
+                                <li>Light fixture and ceiling fan installation</li>
+                                <li>Landscape lighting</li>
+                                <li>Recessed lighting</li>
+                                <li>Whole home surge protection</li>
+                                <li>Grounding of electrical service</li>
+                                <li>Rewiring</li>
+                            </ul>
+                            <p><b>AND MANY MORE!</b></p>
+                        </div>
                     </TabPanel>
                     <TabPanel value={value} index={3} dir={theme.direction}>
-                        <h1 style={{"color": "#053ca3"}}>Contact Us</h1>
-                        <p>
-                            You can reach us any time via phone or email.
-                        </p>
-                        <h2>Phone: 740-123-4567</h2>
-                        <h2>Email: fake@fake.com</h2>
-                    </TabPanel>
-                    <TabPanel value={value} index={4} dir={theme.direction}>
-                        <h1 style={{"color": "#053ca3"}}>Heading 1</h1>
-                        <h2>Heading 2</h2>
-                        <h3>Heading 3</h3>
-                        <h4>Heading 4</h4>
-                        <h5>Heading 5</h5>
-                        <p>Paragraph / body text</p>
-                        <h1 style={{"color": "#053ca3"}}>Color 1</h1>
-                        <h1 style={{"color": "#839cd2"}}>Color 2</h1>
-                        <h1 style={{"color": "#5b6472"}}>Color 3</h1>
+                        <div>
+                            <h1 style={{"color": "#053ca3"}}>Contact Us</h1>
+                            <p>
+                                Please contact us by phone, text, or email!<br/>
+                                <b style={{"color": "#053ca3"}}>(740) 304-1271</b><br/>
+                                <b style={{"color": "#053ca3"}}>cobaltelectric740@gmail.com</b><br/><br/>
+                                Alternatively, you can use the contact form below.
+                            </p>
+                            <Form />
+                        </div>
                     </TabPanel>
                 </SwipeableViews>
             </Box>
