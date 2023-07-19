@@ -63,7 +63,7 @@ export default function App() {
     return (
         <Container>
             <Box sx={{ bgcolor: 'background.paper' }}>
-                <img src={logo} alt={''} width={'75%'} style={{display: 'block',marginLeft: 'auto',marginRight: 'auto'}}/>
+                <img src={logo} alt={''} width={'75%'} style={{display: 'block',marginLeft: 'auto',marginRight: 'auto', marginBottom: '20px'}}/>
                 <AppBar position="static">
                     <Tabs
                         value={value}
