@@ -95,20 +95,7 @@ export default function App() {
                                 We provide expert electrical services to Central and Southeastern Ohio. Our company works in both residential and commercial settings and is qualified to handle all of your electrical needs. Whether you need a light switch replaced or a new electrical panel, we’re the ones to call!<br /><br />
                                 Please contact us today for any of your electrical needs, we provide free estimates and would be happy to answer any questions you may have. Thank you!
                             </p>
-                            <h1>PICTURE OPTIONS: ONE</h1>
                             <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', flexWrap: 'wrap'}}>
-                                <img src={ladder} alt={''}/>
-                                <img src={panel} alt={''} />
-                                <img src={outlet} alt={''} />
-                            </div>
-                            <h1>PICTURE OPTIONS: TWO</h1>
-                            <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', flexWrap: 'wrap'}}>
-                                <img src={ladder} alt={''}/>
-                                <img src={panel} alt={''} />
-                                <img src={outlet} alt={''} />
-                            </div>
-                            <h1>PICTURE OPTIONS: THREE</h1>
-                            <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', flexWrap: 'wrap'}}>
                                 <img src={ladder} alt={''}/>
                                 <img src={panel} alt={''} />
                                 <img src={outlet} alt={''} />
